@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 1</title>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
+        <div class="skip">
             <a href = "">Skip to Main Content</a>
+        </div>
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
@@ -17,11 +22,12 @@
                 <li><a href = "Advising.html">Academic Advising</a></li>
             </ul>
         </nav>
-        <h1>Academic Advising Resource Site</h1>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        
 
     </header>
-    <main>
+    <main class="advising">
+
+        <h1>Academic Advising Resource Site</h1>
         <div>
             <p>There are many resources available for students in the Bachelor of Science in Information (BSI) Program from academic advising, academic planning, and student support resources. This site provides links and condenses these resources into one location.</p>
 
@@ -29,46 +35,73 @@
 
         <section>
             <h2>Academic Advising</h2>
-            <img src="images/Tutoring_Scene.jpg" alt="students and tutor studying together">
-            <p>The academic advising process allows BSI students to plan, review, and execute their academic plans with guidance from a qualified UMSI Academic Advisor. These academic advisors are there to help you achieve your academic goals and make the most of your resources here at Michigan.</p>
-            <h3>What can your academic advisor help with?</h3>
-            <ul>
-                <li>Creating an personalized academic plan</li>
-                <li>Interpreting an academic policy or procedure</li>
-                <li>Discussing concerns about a particular course</li>
-                <li>Connecting with student support resources and services</li>
-                <li>Navigating a disruption to you BSI experience</li>
-            </ul>
-            <h3>Contacting Your Academic Advisors</h3>
-            <p>Shedule a 1:1 Appointment | <a href="https://si-umich.navigate.eab.com/app/#/authentication/remote/">Link to Book Scheduled Meeting</a></p>
-            <p>Drop in 1:1 Appointment | <a href="https://calendar.google.com/calendar/u/0/embed?src=umsi.advising.bsi@umich.edu&ctz=America/New_York">Link to Drop In Schedule</a></p>
-            <p>Email Us | umsi.advising.bsi@umich.edu</p>
+            <div class="academic-advising-container">
+                
+                <article class="academic-advising-child">
+                    <img src="images/Tutoring_Scene.jpg" alt="students and tutor studying together">
+                    <p>The academic advising process allows BSI students to plan, review, and execute their academic plans with guidance from a qualified UMSI Academic Advisor. These academic advisors are there to help you achieve your academic goals and make the most of your resources here at Michigan.</p>
+                </article>
 
+                <article class="academic-advising-child">
+                     <h3>What can your academic advisor help with?</h3>
+                        <ul>
+                            <li>Creating an personalized academic plan</li>
+                            <li>Interpreting an academic policy or procedure</li>
+                            <li>Discussing concerns about a particular course</li>
+                            <li>Connecting with student support resources and services</li>
+                            <li>Navigating a disruption to you BSI experience</li>
+                        </ul>
+                </article>
+
+                <article class="academic-advising-child">
+                    <h3>Contact Your Academic Advisors</h3>
+                    <div class="button">
+                        <p><a href="https://si-umich.navigate.eab.com/app/#/authentication/remote/">Link to Schedule 1:1 Meeting</a></p>
+                    </div>
+                    <div class="button">
+                        <p><a href="https://calendar.google.com/calendar/u/0/embed?src=umsi.advising.bsi@umich.edu&ctz=America/New_York">Link to Drop In Schedule</a></p>
+                    </div>
+                    <p>Email Us | umsi.advising.bsi@umich.edu</p>
+                </article>
+
+            </div>
         </section>
 
         <section>
             <h2>BSI Degree Requirements</h2>
-            <!--add image of something degree requirements-->
             <p>Understanding the BSI Degree Requirements is essential for academic success.</p>
-            <h3>General Requirements</h3>
-            <ul>
-                <li>120 Credits Total Needed to Graduate with BSI Degree</li>
-                <li>55-60+ credits before UMSI (including credits brough to UMICH)</li>
-                <li>45 Upper Level SI Credits</li>
-                <li>15 Upper Level Credits (level 300+)</li>
-            </ul>
-            <h3>Course Search Help</h3>
-            <p>UMSI has many courses for BSI students to take in order to achieve their academic goals. However, this wide selection can sometimes be overwhelming. The following links will help you navigate the wide course selection so you can better prepare and plan out your academic schedule.</p>
-            <p>Atlas | <a href="https://www.google.com/url?q=https%3A%2F%2Fatlas.ai.umich.edu%2F&sa=D&sntz=1&usg=AOvVaw1X-oILivglWP8UvZ_Ugk14">Atlas</a></p>
-            <p>UMSI Course Catalog | <a href="https://docs.google.com/spreadsheets/d/1FiG9NnyZGJdMLeuY7ZIiRMbN4LPDrx_8ZUlyRMaAT_Q/edit#gid=0">Course Catalog</a></p>
-            <p>Current SI Electives F24 | <a href="https://docs.google.com/document/d/1cTe-nIa09iUPECIwYxyt0hDj3_kSsUJcSn1nlWEgp3w/edit#heading=h.tzzu5g1lo83s">Current SI Electives</a></p>
+            
+            <div class="BSI-requirements-container">
+            
+                <article class="BSI-requirements-child">
+                    <h3>General Requirements</h3>
+                    <ul>
+                        <li>120 Credits Total Needed to Graduate with BSI Degree</li>
+                        <li>55-60+ credits before UMSI (including credits brough to UMICH)</li>
+                        <li>45 Upper Level SI Credits</li>
+                        <li>15 Upper Level Credits (level 300+)</li>
+                    </ul>
+
+                </article>
+
+                <article class="BSI-requirements-child">
+                    <h3>Course Search Help</h3>
+                    <p>UMSI has many courses for BSI students to take in order to achieve their academic goals. However, this wide selection can sometimes be overwhelming. The following links will help you navigate the wide course selection so you can better prepare and plan out your academic schedule.</p>
+                    <ul>
+                        <li><a href="https://www.google.com/url?q=https%3A%2F%2Fatlas.ai.umich.edu%2F&sa=D&sntz=1&usg=AOvVaw1X-oILivglWP8UvZ_Ugk14">Atlas</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1FiG9NnyZGJdMLeuY7ZIiRMbN4LPDrx_8ZUlyRMaAT_Q/edit#gid=0">UMSI Course Catalog</a></li>
+                        <li><a href="https://docs.google.com/document/d/1cTe-nIa09iUPECIwYxyt0hDj3_kSsUJcSn1nlWEgp3w/edit#heading=h.tzzu5g1lo83s">Current SI Elective F24</a></li>
+                    </ul>
+                </article>
+
+        </div>
+
         </section>
 
         <section>
             <h2>Student Support Resources</h2>
             <p>Its important to seek help when you need it. UMSI provides students with many resources that may help you in different areas of your academic life.</p>
             <h3>Academic resources</h3>
-            <p>There are so many different academic resources available for students. Included but not limited to:</p>
             <ul>
                 <li><a href="https://sites.google.com/umich.edu/umsitutoring/home">UMSI Tutoring Website</a></li>
                 <li><a href="https://docs.google.com/spreadsheets/d/1gpN3gvMDP4Q_ZGC4AoS2Jc2D7LzbSt_kOw2QmU4EU2k/edit?usp=sharing">Online Python Resources</a></li>

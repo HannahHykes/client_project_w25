@@ -1,0 +1,389 @@
+
+/* styling the skip to main */
+.skip a {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+.skip a:focus {
+    position: static;
+    left: 0;
+    width: auto;
+    height: auto;
+    margin: 10px 0;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+
+/* styling for header */
+header {
+    display: flex; 
+    align-items: center;
+    background-color: #00274C;
+    padding: 10px;
+  }
+  
+/* style the logo image */
+header img {
+    height: 50px;
+    margin-right: 20px; /*space between logo and nav*/
+}
+
+header nav ul {
+    display: flex;
+    width: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    flex: auto;
+    text-align: center;
+}
+
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 10px 10px;
+  }
+
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /* styling all elements*/
+ 
+main {
+    max-width: auto;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    font-family: sans-serif, Helvetica, Arial;
+  }
+
+h1, h2, h3, h4, h5 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: #222;
+    font-weight: bold;
+    font-family:  Helvetica, Arial, sans-serif;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 2px solid #00274C;
+    padding-bottom: 5px;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+section {
+    margin-bottom: 40px;
+}
+
+.intro-section p {
+    margin: 10px 0;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+figure {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+figure img {
+    max-width: 50%;
+    height: auto;
+    border: 2px solid #00274C;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+ol, ul {
+    margin: 10px 0 20px 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* styling for study spots page */
+
+.quiet-spaces-container, .group-friendly-areas-container, .coffee-shop-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.study-spot {
+    background-color: #00274C;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.study-spot h3 {
+    color: white;
+}
+
+.quiet-spaces-container .study-spot:nth-child(odd) {
+    background-color: #FFCB05;
+    color: #00274C;
+}
+
+.quiet-spaces-container .study-spot:nth-child(odd) h3 {
+    color: #00274C;
+}
+
+.group-friendly-areas-container .study-spot:nth-child(even) {
+    background-color: #FFCB05;
+    color: #00274C;
+}
+
+.group-friendly-areas-container .study-spot:nth-child(even) h3 {
+    color: #00274C;
+}
+
+.coffee-shop-container .study-spot:nth-child(odd) {
+    background-color: #FFCB05;
+    color: #00274C;
+}
+
+.coffee-shop-container .study-spot:nth-child(odd) h3 {
+    color: #00274C;
+}
+
+.coffee-shop-container .study-spot:nth-child(even) .button a {
+    background-color: #FFCB05;
+    color: #00274C;;
+}
+
+.coffee-shop-container .study-spot:nth-child(even) .button a:hover, .coffee-shop-container .study-spot:nth-child(even) a:focus {
+    background-color: #2F65A7;
+    color: white;
+}
+
+.group-friendly-areas-container .study-spot:nth-child(odd) .button a {
+    background-color: #FFCB05;
+    color: #00274C;;
+}
+
+.group-friendly-areas-container .study-spot:nth-child(odd) .button a:hover, .group-friendly-areas-container .study-spot:nth-child(even) a:focus {
+    background-color: #2F65A7;
+    color: white;
+}
+
+
+.study-spot img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px solid darkblue;
+}
+
+.study-spot h3 {
+    text-align: center;
+}
+
+.button a {
+    display: inline-block;
+    background-color: #00274C;
+    color: #FFCB05;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.button p{
+    text-align: center;
+}
+
+.button a:hover, .button a:focus {
+    background-color: #2F65A7;
+}
+
+/* styling for tutoring page */
+
+.about-tutoring-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    /* border: 2px solid darkblue; */
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.tutoring-intro {
+    background-color: #00274C;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.tutoring-intro h3 {
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+
+.tutoring-intro p, .tutoring-intro ul{
+    color: white;
+}
+
+.tutoring-about-intro img{
+    width: 60%;
+    display: block;
+    margin: 10px auto;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.tutoring-header .button a{
+   display: inline;
+   background-color: #00274C;
+   color: #FFCB05;
+   font-size: 3em;
+}
+
+.tutoring-header .button a:hover, .tutoring-header .button a:focus {
+    background-color: #2F65A7;
+}
+
+.tutoring-header img {
+    display: inline-block;
+    margin: auto;
+    width: 40%;
+    height: auto;
+    /* padding: 0px 0px 10px 0px; */
+}
+
+.programming-tutors-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.program-tutor {
+    background-color: #FFCB05;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.program-tutor h5 {
+    font-size: 1.25em;
+    text-align: center;
+    padding: 0.25em;
+    color: #00274C;
+}
+
+.program-tutor p {
+    padding: 0.5em 0;
+    color: #00274C;
+}
+
+.math-tutors-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.math-tutor {
+    background-color: #FFCB05;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.math-tutor h5 {
+    font-size: 1.25em;
+    text-align: center;
+    padding: 0.25em;
+    color: #00274C;
+}
+
+.math-tutor p {
+    padding: 0.5em 0;
+    color: #00274C;
+}
+
+.academic-advising-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.academic-advising-child:first-child {
+    grid-column: 1 / -1;
+}
+
+.academic-advising-child:first-child img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.academic-advising-child {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #CFC096;
+}
+
+.academic-advising-child h3 {
+    text-align: center;
+}
+
+.academic-advising-child:last-child p {
+    text-align: center;
+    margin: 5px;
+}
+
+.BSI-requirements-container {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap: 10px;
+}
+
+.BSI-requirements-child {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #CFC096;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.BSI-requirements-child h3 {
+    text-align: center;
+}
