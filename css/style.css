@@ -2,7 +2,8 @@
 /* styling the skip to main */
 .skip a {
     position: absolute;
-    left: -9999px;
+    left: -10000px;
+    top: auto;
     width: 1px;
     height: 1px;
     overflow: hidden;
@@ -63,6 +64,13 @@ header nav ul li a {
     text-decoration: underline;
   }
 
+  header nav ul li a.active {
+    background-color: #FFCB05;
+    color: #00274C;
+    border-radius: 5px;
+  }
+
+
   /* styling all elements*/
  
 main {
@@ -70,7 +78,7 @@ main {
     margin: 20px auto;
     padding: 20px;
     background: white;
-    font-family: sans-serif, Helvetica, Arial;
+    font-family: Helvetica, Arial, sans-serif;
   }
 
 h1, h2, h3, h4, h5 {
@@ -207,13 +215,11 @@ footer a {
     color: white;
 }
 
-
 .study-spot img {
     width: 100%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
-    border: 2px solid darkblue;
 }
 
 .study-spot h3 {
