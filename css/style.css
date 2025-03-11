@@ -26,6 +26,10 @@ header {
     background-color: #00274C;
     padding: 10px;
   }
+
+header nav {
+    overflow-x: auto;
+}
   
 /* style the logo image */
 header img {
@@ -62,7 +66,7 @@ header nav ul li a {
   /* styling all elements*/
  
 main {
-    max-width: auto;
+    max-width: 100%;
     margin: 20px auto;
     padding: 20px;
     background: white;
