@@ -148,6 +148,29 @@ footer a {
     text-decoration: underline;
 }
 
+/*unique challenge*/
+
+.intro-section h2{
+    background-color: #00274C;
+    color: #FFCB05;
+    border-radius: 5px;
+    border: 2px solid #00274C;
+    padding: 10px;
+    text-align: center;
+
+
+}
+
+#fadeInElement {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+  
+  #fadeInElement.visible {
+    opacity: 1;
+  }
+
+
 /* styling for study spots page */
 
 .quiet-spaces-container, .group-friendly-areas-container, .coffee-shop-container {
@@ -364,15 +387,18 @@ footer a {
     
 }
 
+
 .academic-advising-child {
     border: 2px solid black;
     border-radius: 5px;
     padding: 10px;
-    background-color: #CFC096;
+    background-color: #989C97;
+    /* color: white; */
 }
 
 .academic-advising-child h3 {
     text-align: center;
+    /* color: white; */
 }
 
 .academic-advising-child:last-child p {
@@ -387,13 +413,158 @@ footer a {
 }
 
 .BSI-requirements-child {
-    border: 2px solid black;
+    border: 2px solid #00274C;
     border-radius: 5px;
-    background-color: #CFC096;
+    background-color: #989C97;
+    /* color: white; */
     padding: 10px;
     margin-top: 5px;
 }
 
 .BSI-requirements-child h3 {
     text-align: center;
+    /* color: white; */
 }
+
+.BSI-requirements-child:last-child .button{
+    text-align:center;
+}
+
+body.errorpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* background-color: #CFC096;  */
+}
+
+body.errorpage h1 {
+    padding-top: 1.5em;
+}
+
+body.errorpage h2 {
+    border-bottom: none;
+}
+
+body.errorpage p {
+    padding: 0.5em;
+}
+
+.academic-resources, .health-wellness-resources {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.academic-resources .button a, .health-wellness-resources .button a{
+    background-color: #2F65A7;
+    border: 2px solid #00274C;
+    color: white;
+}
+
+.academic-resources .button a:hover, .academic-resources.button a:focus, .health-wellness-resources .button a:focus, .health-wellness-resources .button a:hover{
+    background-color: #00274C;
+}
+
+@media screen and (min-width: 700px) {
+
+    .physical-health-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+    
+    .physical-health-article {
+        border: solid 2px #00274C;
+        border-radius: 5px;
+        margin: 20px 10px;
+        padding: 10px;
+        background-color: #989C97;
+    }
+
+    .mental-health-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+    }
+
+    .mental-health-article {
+        background-color: #989C97;
+        border: solid 2px #00274C;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .mental-health-article p{
+        padding: 5px 0;
+    }
+
+    .quiet-spaces-container, .group-friendly-areas-container, .coffee-shop-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .study-spot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .study-spot img {
+        max-width: 350px;
+    }
+
+    .about-tutoring-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .programming-tutors-container, .math-tutors-container  {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tutoring-about-intro img {
+        max-width: 600px;
+        height: auto;
+    }
+
+    .academic-advising-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .academic-advising-child:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .academic-advising-child:first-child img {
+        max-width: 600px;
+        height: auto;
+        
+    }
+
+    .academic-advising-child:first-child p {
+        padding: 10px;
+    }
+
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    
+    #fadeInElement {
+      animation: none; 
+      transition: none;
+    }
+
+}
+
